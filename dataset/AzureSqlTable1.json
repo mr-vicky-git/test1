@@ -1,0 +1,62 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"TableName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "tailnum",
+				"type": "varchar"
+			},
+			{
+				"name": "year",
+				"type": "varchar"
+			},
+			{
+				"name": "type",
+				"type": "varchar"
+			},
+			{
+				"name": "manufacturer",
+				"type": "varchar"
+			},
+			{
+				"name": "model",
+				"type": "varchar"
+			},
+			{
+				"name": "engines",
+				"type": "varchar"
+			},
+			{
+				"name": "seats",
+				"type": "varchar"
+			},
+			{
+				"name": "speed",
+				"type": "varchar"
+			},
+			{
+				"name": "engine",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": {
+				"value": "@dataset().TableName",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

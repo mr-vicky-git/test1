@@ -1,0 +1,9 @@
+{
+	"name": "adfforv",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9a5e8d03-5961-4f14-8ca2-94a35a2653b6",
+		"tenantId": "3762f1a8-bb2f-4783-aee6-d2c595da4519"
+	}
+}
