@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfforv"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase2_connectionString": {
+			"value": ""
+		},
+		"trigger1_properties_pipeline1_parameters_FileName": {
+			"value": "@triggerBody().fileName"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"value": "/subscriptions/c997d160-445a-41d7-b8a5-f7df8cddae15/resourceGroups/RG1/providers/Microsoft.Storage/storageAccounts/saforv"
+		}
+	}
+}
