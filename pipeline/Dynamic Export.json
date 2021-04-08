@@ -132,7 +132,15 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://prod-19.westeurope.logic.azure.com:443/workflows/107f9e1382114ff6a4e1dfd634419a53/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=-X3cOBp-_6syEycaZ-ixdxQ2CdfQK4wZyVmLAmsStdE",
+					"method": "POST",
+					"body": {
+						"value": "{\n    \"title\": \" Pipeline Run Finished\",\n    \"message\": \" Finished Successfully\",\n    \"color\": \"Green\",\n    \"dataFactoryName\": \"@{pipeline().DataFactory}\",\n    \"pipelineName\": \"@{pipeline().Pipeline}\",\n    \"pipelineRunId\": \"@{pipeline().RunId}\",\n    \"time\": \"@{utcnow()}\"\n}",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"annotations": []
