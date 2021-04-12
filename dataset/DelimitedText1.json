@@ -1,0 +1,72 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "cars.csv",
+				"container": "input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Name",
+				"type": "String"
+			},
+			{
+				"name": "mpg",
+				"type": "String"
+			},
+			{
+				"name": "cyl",
+				"type": "String"
+			},
+			{
+				"name": "disp",
+				"type": "String"
+			},
+			{
+				"name": "hp",
+				"type": "String"
+			},
+			{
+				"name": "drat",
+				"type": "String"
+			},
+			{
+				"name": "wt",
+				"type": "String"
+			},
+			{
+				"name": "qsec",
+				"type": "String"
+			},
+			{
+				"name": "vs",
+				"type": "String"
+			},
+			{
+				"name": "am",
+				"type": "String"
+			},
+			{
+				"name": "gear",
+				"type": "String"
+			},
+			{
+				"name": "carb",
+				"type": "String"
+			}
+		]
+	}
+}
